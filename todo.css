@@ -1,0 +1,104 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body {
+    background-color: #EDE8F5;
+    font: inherit;
+}
+
+h1 {
+    padding: 1%;
+    font-size: 3rem;
+    color: #EDE8F5;
+    background-color: transparent;
+    text-transform: bold;
+    text-shadow: 2px 2px 2px #ADBBDA;
+    display: inline-block;
+    animation-name: mover;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+.header {
+    box-shadow: 5px 5px 5px lightyellow;
+    background-color: #3D52A0;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(30vw);
+        opcaity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+}
+
+
+
+#task {
+    width: 80%;
+    padding: 20px;
+    margin: 2% 2% 2% 5%;
+    border: 2px solid #8697C4;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-block;
+
+}
+
+#task:hover {
+    outline-style: solid;
+    outline-color: #ADBBDA;
+    box-shadow: 5px 5px 5px;
+    cursor: text;
+
+}
+
+#addButton {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    color: #3D52A0;
+
+
+}
+
+
+
+.TaskList {
+    padding: 10px;
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    border-radius: 5px;
+    margin: 1% auto 1% auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    outline: 5px 5px #ADBBDA;
+}
+
+
+p {
+    display: inline-block;
+}
+
+.delete {
+    height: 30px;
+    width: 100px;
+    letter-spacing: 1px;
+    position: static;
+    right: 5%;
+    background-color: red;
+    color: #EDE8F5;
+    border-radius: 5px;
+}
